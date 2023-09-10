@@ -7,7 +7,7 @@ export const Registeruser = async (payload) => {
 
   try {
     const response = await axiosInstance.post(
-      "http://localhost:5000/users/register",
+      "/users/register",
       payload
     );
     
@@ -25,7 +25,7 @@ export const Placeadd = async (payload) => {
 
   try {
     const response = await axiosInstance.post(
-      "http://localhost:5000/users/place",
+      "/users/place",
       payload
     );
     
@@ -42,7 +42,7 @@ export const Mockadd = async (payload) => {
 
   try {
     const response = await axiosInstance.post(
-      "http://localhost:5000/users/mock",
+      "/users/mock",
       payload
     );
     
@@ -59,7 +59,7 @@ export const Classadd = async (payload) => {
 
   try {
     const response = await axiosInstance.post(
-      "http://localhost:5000/users/class",
+      "/users/class",
       payload
     );
     
@@ -75,7 +75,7 @@ export const AddClassadd = async (payload) => {
 
   try {
     const response = await axiosInstance.post(
-      "http://localhost:5000/users/addclass",
+      "/users/addclass",
       payload
     );
     
@@ -96,7 +96,7 @@ export const AddClassadd = async (payload) => {
 export const Loginuser = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "http://localhost:5000/users/login",
+      "/users/login",
       payload
     );
     return response.data;
@@ -122,7 +122,7 @@ export const GetCurrentuser = async () => {
 export const GetPlaced = async () => {
   try {
     const response = await axiosInstance.get(
-      "http://localhost:5000/users/get-placed"
+      "/users/get-placed"
     );
 
     return response.data;
@@ -134,7 +134,7 @@ export const GetPlaced = async () => {
 export const GetClass = async () => {
   try {
     const response = await axiosInstance.get(
-      "http://localhost:5000/users/get-class"
+      "/users/get-class"
     );
 
     return response.data;
@@ -147,7 +147,7 @@ export const GetClass = async () => {
 export const GetAddClass = async () => {
   try {
     const response = await axiosInstance.get(
-      "http://localhost:5000/users/get-add-class"
+      "/users/get-add-class"
     );
 
     return response.data;
@@ -164,7 +164,7 @@ export const GetAllmock = async()=>{
     
   try{
      
-      const response = await axiosInstance.get("http://localhost:5000/users/get-mock");
+      const response = await axiosInstance.get("/users/get-mock");
       return response.data;
   }
   catch(error){
