@@ -109,7 +109,7 @@ export const Loginuser = async (payload) => {
 export const GetCurrentuser = async () => {
   try {
     const response = await axiosInstance.get(
-      "http://localhost:5000/users/get-current-user"
+      "/users/get-current-user"
     );
 
     return response.data;
